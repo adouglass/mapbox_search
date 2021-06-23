@@ -194,12 +194,26 @@ enum GeometryType { POINT }
 
 final geometryTypeValues = EnumValues({"Point": GeometryType.POINT});
 
-enum PlaceType { REGION, COUNTRY, PLACE }
+enum PlaceType {
+  REGION,
+  COUNTRY,
+  PLACE,
+  ADDRESS,
+  POI,
+  POSTCODE,
+  DISTRICT,
+  LOCALITY
+}
 
 final placeTypeValues = EnumValues({
   "country": PlaceType.COUNTRY,
   "place": PlaceType.PLACE,
-  "region": PlaceType.REGION
+  "region": PlaceType.REGION,
+  "address": PlaceType.ADDRESS,
+  "poi": PlaceType.POI,
+  "postcode": PlaceType.POSTCODE,
+  "district": PlaceType.DISTRICT,
+  "locality": PlaceType.LOCALITY
 });
 
 class Properties {
